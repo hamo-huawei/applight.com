@@ -1,0 +1,689 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+
+/* strat nav bar  */
+.nav-bar {
+    padding: 5px 10px;
+    min-height: 60px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 6px -1px black;
+}
+
+
+.nav-bar h1 a {
+    text-decoration: none;
+    color: #d320e4;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    transition: 0.2s;
+}
+
+.nav-bar h1 a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    position: relative;
+
+}
+
+.links .icon {
+    display: none;
+
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+
+.links ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.links ul li a:hover {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* end nav bar  */
+/* start container-1  */
+.container-1 {
+    min-height: 400px;
+}
+
+.container-1 .bg {
+    background-image: linear-gradient(to right, #cc47dd 45%, #761bdd);
+    padding: 20px;
+
+}
+
+.cont-1 {
+    display: flex;
+    align-items: center;
+}
+
+.cont-1 .left h1 {
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 2px;
+
+}
+
+.cont-1 .left .p-1 {
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+
+.cont-1 .left .p-2 {
+    width: 45%;
+    margin-top: 50px;
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 1px;
+}
+
+.left .down-app {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left .down-app img {
+    border-radius: 10px;
+    width: 80%;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+.right {
+    width: 20%;
+    animation: right 0.6s infinite alternate;
+}
+
+@keyframes right {
+    to {
+        transform: translateY(10px)
+    }
+}
+
+/* end container-1  */
+/* start container-2  */
+.container-2 {
+    padding: 25px;
+    text-align: center;
+}
+
+.container-2 .about .h2-line {
+    position: relative
+}
+
+.container-2 .about .h2-line h2 {
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container-2 .about .h2-line .lines {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45px)
+}
+
+.container-2 .about .h2-line .lines div:first-child {
+    width: 30px;
+    border-bottom: 1px dashed #49006b;
+
+
+}
+
+.container-2 .about .h2-line .lines div:nth-child(2) {
+    width: 30px;
+    border-bottom: 1px solid #49006b;
+
+
+}
+
+.container-2 .about .h2-line .lines div:nth-child(3) {
+    width: 30px;
+    border-bottom: 1px dashed #49006b;
+
+
+}
+
+.container-2 .about .p-cont-2 {
+    font-weight: bold;
+}
+
+.container-2 .about .cells {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-2 .about .cells .cell {
+    background-image: linear-gradient(to right, #db23d2, #651cdb);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #16e7f1;
+    transition: 0.5s;
+
+}
+
+.container-2 .about .cells .cell:hover {
+    box-shadow: 0px 0px 6px 5px #16e7f1;
+}
+
+.container-2 .about .cells .cell h3 {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container-2 .about .cells .cell p {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container-2 .about .cells .cell img {
+    width: 120px;
+}
+
+.container-2 .about button {
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #db23d2, #651cdb);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.9s
+}
+
+.container-2 .about button:hover {
+    background-image: linear-gradient(to right, #db23d200, #651cdb00);
+    color: #6909d6;
+    border: 1px solid #6909d6;
+}
+
+/* end container-2  */
+/* strat container-3  */
+.container-3 {
+    height: 300px;
+    background-image: linear-gradient(to right, #8614d173, #3918cc6b), url(../images/video-bg.jpg);
+    background-attachment: scroll;
+    text-align: center;
+    padding-top: 85px;
+
+}
+.container-3 .video h1{
+    color: white
+}
+
+.container-3 .video img {
+    width: 110px;
+}
+
+/* end container-3  */
+/* start container-4  */
+.container-4 {
+    padding: 20px;
+    background-color: #f7eded;
+    border-radius: 10px;
+}
+
+.container-4 .main-text-cont-4 {
+    text-align: center;
+    position: relative;
+}
+
+.container-4 .main-text-cont-4 h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container-4 .main-text-cont-4 .lines-cont-4 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+}
+
+.container-4 .main-text-cont-4 .lines-cont-4 div {
+    width: 30px;
+    height: 1px;
+
+}
+
+.container-4 .main-text-cont-4 .lines-cont-4 div:first-child {
+    border-bottom: 1px dashed #a210c7
+}
+
+.container-4 .main-text-cont-4 .lines-cont-4 div:nth-child(2) {
+    border-bottom: 1px solid #a210c7
+}
+
+.container-4 .main-text-cont-4 .lines-cont-4 div:nth-child(3) {
+    border-bottom: 1px dashed #a210c7
+}
+
+.container-4 .main-text-cont-4 .p-cont-4 {
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.container-4 .flex-cont-4 {
+    display: flex;
+    /* justify-content: flex-start; */
+    gap: 30px;
+    align-items: center;
+}
+
+.left-4 .lefting {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left-4 .lefting i {
+    color: #d60fe3;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #d800ff;
+    border-radius: 28%;
+    transform: translateY(5px)
+}
+
+.lefting .text-left {
+    width: 70%;
+    direction: rtl;
+}
+
+.lefting .text-left p {
+    font-size: 15px;
+}
+
+.center-cont-4 {
+    width: 28%;
+    height: 0%
+}
+
+.right-4 .righting {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.right-4 .righting i {
+    color: #d60fe3;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #d800ff;
+    border-radius: 28%;
+    transform: translateY(5px)
+}
+
+.righting .text-right {
+    width: 70%;
+    direction: ltr;
+}
+
+.icon-animation-cont-4 {
+    animation: icon-4 0.5s infinite alternate;
+}
+
+@keyframes icon-4 {
+    to {
+        transform: translateY(17px)
+    }
+}
+
+/* end container-4  */
+/* start container-5  */
+.container-5{
+    text-align: center;
+    padding: 20px;
+}
+.container-5 .title-5 .lines{
+    position: relative;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55px)
+
+}
+.container-5 .title-5 .lines div{
+    width: 35px
+}
+.container-5 .title-5 .lines div:first-child{
+    border: 1px dashed #950ed4
+}
+.container-5 .title-5 .lines div:nth-child(2){
+    border: 1px solid #950ed4
+}
+.container-5 .title-5 .lines div:nth-child(3){
+    border: 1px dashed #950ed4
+}
+.container-5 .persons .person img{
+width: 40%;
+border-radius: 50%;
+animation: img-cont-5 0.6s linear infinite alternate;
+}
+.container-5 .persons .yogesh img{
+    animation-delay: 0.2s
+}
+.container-5 .persons .nitu img{
+    animation-delay: 0.4s
+}
+@keyframes img-cont-5{
+    to{
+        transform:translatey(15px)
+    }
+}
+.container-5 .persons .person h3{
+    font-weight: bold ;
+    text-transform: capitalize;
+    color: #a210c7;
+    margin: 5px 0;
+}
+.container-5 .persons {
+    margin-top: 20px;
+    display: flex;
+
+    
+}
+/* end container-5  */
+/* strat container-6  */
+.container-6{
+    padding: 25px;
+    text-align: center;
+    background-image: linear-gradient(to right, #c125e7, #7332dd);
+}
+.container-6 .title-6{
+    position: relative;
+    color: white;
+}
+.container-6 .title-6 h1{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.container-6 .title-6 .lines{
+    position: absolute;
+    left: 50%;
+    display: flex;
+    transform: translateX(-55px);
+}
+.container-6 .title-6 .lines div{
+    width: 35px;
+
+}
+.container-6 .title-6 .lines div:first-child{
+    border: 1px dashed #a210c7
+    
+}
+.container-6 .title-6 .lines div:nth-child(2){
+    border: 1px solid #a210c7
+    
+}
+.container-6 .title-6 .lines div:nth-child(3){
+    border: 1px dashed #a210c7
+    
+}
+
+.container-6 .card{
+     background-color: #d4d4d4;
+     width: 50%;
+     margin: 15px auto;
+     border-radius: 10px;
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     gap: 22px;
+}
+.container-6 .card .text{
+    text-align: left;
+
+}
+.container-6 .card .text h2{
+   text-transform: capitalize;
+
+
+}
+.container-6 .card .text h5{
+    margin-bottom: 15px
+
+}
+
+.container-6 .card img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+}
+
+/* end container-6  */
+/* start container-7  */
+.container-7{
+    background-color: #cecece;
+    padding: 20px;
+}
+.container-7 .title-7{
+    text-align: center;
+    position: relative;
+}
+.container-7 .title-7 h1{
+    font-weight: bold;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.container-7 .title-7 .lines{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-55px);
+    display: flex;
+    
+}
+.container-7 .title-7 .lines div{
+    width: 40px
+}
+.container-7 .title-7 .lines div:first-child{
+    border: 1px dashed #a210c7
+}
+.container-7 .title-7 .lines div:nth-child(2){
+    border: 1px solid #a210c7
+}
+.container-7 .title-7 .lines div:nth-child(3){
+    border: 1px dashed #a210c7
+}
+.container-7 .title-7 p:last-of-type{
+    margin-bottom: 20px;
+}
+.container-7 .address{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    column-gap: 35px;
+}
+
+.container-7 .address .add{
+    text-align: left;
+    width: 90%
+}
+.container-7 .address .add h2{
+    text-transform: capitalize;
+}
+
+/* end container-7  */
+/* start conttainer-8  */
+.container-8{
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.container-8 .title-8{
+    text-align: center;
+    position: relative;
+}
+.title-8 h1{
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.title-8 .lines{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-55px);
+    display: flex;
+}
+.title-8 .lines div{
+    width: 35px;
+}
+.title-8 .lines div:first-child{
+    border: 1px dashed #ae1eda
+}
+.title-8 .lines div:nth-child(2){
+    border: 1px solid #ae1eda
+}
+.title-8 .lines div:nth-child(3){
+    border: 1px dashed #ae1eda
+}
+.title-8 p:first-of-type{
+    margin-top: 20px
+}
+.detalis{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.detalis form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding: 20px;
+    
+}
+.detalis form input[type]{
+    outline: none;
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 5px;
+}
+.detalis form textarea{
+    width: 100%;
+    height: 110px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 5px;
+}
+.detalis form input[type="submit"]{
+    background-image: linear-gradient(to right, #c741cc 25%, #641fe4);
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: none;
+}
+.detalis form input[type="submit"]:hover{
+    background-image: linear-gradient(to right, transparent, transparent);
+    color:#950ed4;
+    border: 1px solid #7511b8;
+    
+}
+
+.detalis .contact{
+    background-image: linear-gradient(to right, #c741cc 25%, #641fe4   );
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.detalis .contact .cont-8{
+   display: flex; 
+   gap: 20px;
+   align-items: baseline;
+}
+
+/* end conttainer-8  */
+/* start container-9  */
+.container-9{
+    background-image: linear-gradient(to right, #c741cc 25%, #641fe4   );
+    padding: 25px;
+
+}
+.container-9 .title-9{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.container-9 .title-9 h1{
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.container-9 .title-9 .lines{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55px)
+}
+.container-9 .title-9 .lines div{
+    width: 35px
+}
+.container-9 .title-9 .lines div:first-child{
+    border: 1px dashed #061ad1 ;
+}
+.container-9 .title-9 .lines div:nth-child(2){
+    border: 1px solid #061ad1 ;
+}
+.container-9 .title-9 .lines div:nth-child(3){
+    border: 1px dashed #061ad1 ;
+}
+.container-9 .title-9 p:first-of-type{
+    margin-top: 20px;
+}
+.container-9 .store{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    margin: 20px auto
+}
+.container-9 .store a img{
+    border-radius: 10px;
+}
+.designer p{
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* start container-9  */

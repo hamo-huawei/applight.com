@@ -1,0 +1,360 @@
+@media screen and (max-width: 425px) {
+
+    /* start nav bar  */
+    .links {
+        position: relative;
+
+    }
+
+    .links .icon {
+        width: 25px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        direction: rtl
+    }
+
+    .links .icon div {
+        background-color: black;
+        height: 3px
+    }
+
+    .links .icon div:first-child {
+        width: 100%;
+    }
+
+    .links .icon div:nth-child(2) {
+        width: 50%;
+        transition: 0.2s
+    }
+
+    .links .icon div:nth-child(3) {
+        width: 100%;
+    }
+
+    .links ul {
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        border-radius: 10px;
+        background-color: #e3d2d2;
+        width: 280px;
+        text-align: center;
+        display: none;
+        z-index: 1;
+
+    }
+
+    .links ul::before {
+        content: "";
+        border-width: 13px;
+        border-style: solid;
+        border-color: #ff000000 #00800000 #ffffff #0000ff00;
+        position: absolute;
+        top: -24px;
+        right: 9px;
+    }
+
+    .links:hover ul {
+        display: block;
+        background-color: #9a69c2;
+
+    }
+
+    .links ul li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-variant: small-caps;
+        transition: all 0.4s;
+        padding: 10px;
+    }
+
+    /* end nav bar  */
+    /* start container-1  */
+    .cont-1 {
+        flex-direction: column-reverse;
+    }
+
+    .cont-1 .left h1 {
+        margin-top: 10px;
+    }
+
+    .cont-1 .left .p-2 {
+        width: 100%;
+        margin-top: 15px;
+
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left .down-app {
+        gap: unset;
+    }
+
+    .left .down-app img {
+        width: 85%;
+        margin-top: 15px;
+    }
+
+    .right {
+        width: 60%;
+    }
+
+    /* end container-1  */
+    /* start container-2  */
+    .container-2 .about .cells {
+
+        flex-direction: column;
+    }
+
+    /* end container-2  */
+    /* start container-4  */
+    .container-4 {
+        border-radius: 10px;
+    }
+
+    .container-4 .flex-cont-4 {
+        flex-direction: column;
+        margin-top: 20px
+    }
+
+    .center-cont-4 {
+        width: 40%;
+        animation: phone-2 0.9s infinite alternate;
+    }
+
+    @keyframes phone-2 {
+        from {
+            transform: translateX(30px)
+        }
+
+        to {
+            transform: translateX(-60px)
+        }
+
+    }
+
+    .center-cont-4:hover {
+        animation-play-state: paused;
+    }
+
+    /* end container-4  */
+    /* start container-5  */
+    .container-5 .persons {
+        flex-direction: column;
+    }
+
+    /* end container-5  */
+    /* start container-6  */
+    .container-6 .card {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container-6 .card img {
+        width: 40%;
+        height: unset;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: white;
+    }
+    .container-6 .card .text {
+        text-align: center;
+    }
+
+    /* end container-6  */
+    /* start container-8  */
+    .detalis {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .detalis form {
+        width: 100%;
+        padding: 10px;
+       
+    }
+    
+    
+    /* end container-8  */
+    /* start container-9  */
+    .container-9 .store {
+        gap: 15px;
+        flex-direction: column;
+    }
+    /* end container-9  */
+    .designer p {
+        font-size: 20px;
+        padding: 5px 5px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+
+    /* start nav bar  */
+    .links {
+        position: relative;
+
+    }
+
+    .links .icon {
+        width: 25px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        direction: rtl
+    }
+
+    .links .icon div {
+        background-color: black;
+        height: 3px
+    }
+
+    .links .icon div:first-child {
+        width: 100%;
+    }
+
+    .links .icon div:nth-child(2) {
+        width: 50%;
+        transition: 0.2s
+    }
+
+    .links .icon div:nth-child(3) {
+        width: 100%;
+    }
+
+    .links ul {
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        border-radius: 10px;
+        background-color: #e3d2d2;
+        width: 280px;
+        text-align: center;
+        display: none;
+        z-index: 1;
+
+    }
+
+    .links ul::before {
+        content: "";
+        border-width: 13px;
+        border-style: solid;
+        border-color: #ff000000 #00800000 #ffffff #0000ff00;
+        position: absolute;
+        top: -24px;
+        right: 9px;
+    }
+
+    .links:hover ul {
+        display: block;
+        background-color: #9a69c2;
+
+    }
+
+    .links ul li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-variant: small-caps;
+        transition: all 0.4s;
+        padding: 10px;
+    }
+
+    /* end nav bar  */
+    /* start container-1  */
+    .cont-1 .left .p-2 {
+        width: 85%;
+    }
+
+    .right {
+        width: 30%;
+    }
+
+    /* end container-1  */
+    /* start container-2  */
+    .container-2 .about .cells {
+
+        flex-direction: column;
+    }
+
+    /* end container-2  */
+    /* start container-4  */
+    .container-4 {
+        border-radius: 10px;
+    }
+
+    .container-4 .flex-cont-4 {
+        flex-direction: column;
+        margin-top: 20px
+    }
+
+    .center-cont-4 {
+        width: 40%;
+        animation: phone-2 0.9s infinite alternate;
+    }
+
+    @keyframes phone-2 {
+        from {
+            transform: translateX(30px)
+        }
+
+        to {
+            transform: translateX(-60px)
+        }
+
+    }
+
+    .center-cont-4:hover {
+        animation-play-state: paused;
+    }
+
+    /* end container-4  */
+    /* start container-6  */
+    .container-6 .card {
+        width: 80%;
+    }
+    .container-6 .card img {
+        width: 25%;
+    }
+    /* end container-6  */
+    .detalis {
+        flex-direction: column;
+    }
+    .detalis form {
+        width: 100%;
+        padding: 10px;
+       
+    }
+    
+    
+    /* end container-8  */
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* start container-4  */
+    .righting .text-right {
+        width: 100%;
+    }
+
+    .lefting .text-left {
+        width: 100%;
+    }
+
+    /* end container-4  */
+    /* start container-6  */
+    .container-6 .card {
+        width: 70%;
+    }
+    /* end container-6  */
+}
